@@ -30,7 +30,7 @@
         {
             this.XMLTabWindow = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.treeView = new System.Windows.Forms.TreeView();
             this.OpenXMLButton = new System.Windows.Forms.Button();
             this.NewTabButton = new System.Windows.Forms.Button();
             this.RemoveTabButton = new System.Windows.Forms.Button();
@@ -50,21 +50,21 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.treeView1);
+            this.tabPage1.Controls.Add(this.treeView);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(893, 465);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Page 1";
+            this.tabPage1.Text = "Empty Tab";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // treeView1
+            // treeView
             // 
-            this.treeView1.Location = new System.Drawing.Point(6, 6);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(881, 453);
-            this.treeView1.TabIndex = 0;
+            this.treeView.Location = new System.Drawing.Point(6, 6);
+            this.treeView.Name = "treeView";
+            this.treeView.Size = new System.Drawing.Size(881, 453);
+            this.treeView.TabIndex = 0;
             // 
             // OpenXMLButton
             // 
@@ -105,6 +105,7 @@
             this.Controls.Add(this.NewTabButton);
             this.Controls.Add(this.OpenXMLButton);
             this.Controls.Add(this.XMLTabWindow);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
             this.XMLTabWindow.ResumeLayout(false);
@@ -117,7 +118,7 @@
 
         private System.Windows.Forms.TabControl XMLTabWindow;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TreeView treeView;
         private System.Windows.Forms.Button OpenXMLButton;
         private System.Windows.Forms.Button NewTabButton;
         private System.Windows.Forms.Button RemoveTabButton;
